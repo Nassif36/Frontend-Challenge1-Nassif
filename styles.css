@@ -92,3 +92,9 @@ body {
     font-weight: 600;
         color: #000000c5;
 }
+.main h2 {
+    text-align: center;
+    color:  #032449;
+    padding:9px 3px 0 3px;
+    border-bottom: 2px solid white;
+}
