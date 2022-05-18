@@ -1,0 +1,138 @@
+:root {
+    --primario: #00eac3;
+    --primario-oscuro: #0bb99c;
+
+;
+}
+*,*::before,*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family:sans-serif;
+    color: white;
+    background-color: #e1e1e1;
+}
+
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+p {
+
+}   
+
+.contenedor {
+    max-width: calc(60vw + 5rem);
+    margin: 0 auto;
+}
+
+.header_principal {
+    background-color:var(--primario);
+}
+
+
+.navegacion_principal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5em 3em;
+}
+
+.logo a{
+    color: white;
+    padding: 1.6em 3em;
+    background-color: var(--primario-oscuro);
+}
+
+.navegacion__links {
+    display: flex;
+    align-items: center;
+    gap: 4vw;
+}
+.navegacion__links a {
+    color: white;
+    font-weight: 600;
+}
+/** main **/
+.header_principal {
+
+}
+.seccion_tareas {
+    
+}
+
+.seccion_tareas {
+    background-color: rgb(206, 206, 206);
+    border: 1px solid rgba(0, 255, 85, 0.308);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    margin-top: 5% 0;
+    min-height: 80vh;
+}
+
+.barra__tareas {
+    display: grid;
+    grid-template-columns: repeat(3, 25%);
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    padding:  3em 3em 0 3em;
+    margin: 10vw 0 2em 0;
+    color: white;   
+ 
+}
+
+.barra__tareas p {
+    background-color: black;
+    padding:.5em 2em;
+    border-radius: 3px;
+}
+
+.lista__tareas {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+
+    gap: 1em;
+    justify-content: space-between;
+    width: 100%;
+    padding:  0 3em;
+
+    color: white;
+}
+
+.tarea {
+    display: grid;
+    grid-template-columns: repeat(3, 25%);
+    justify-content: space-between;
+    width: 100%;
+    text-align: center;
+    padding: .3em;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: 1px solid rgba(31, 43, 35, 0.308);
+    text-align: center;
+}
+
+.tarea p {
+    margin: 0 auto;
+    border-bottom: 2px solid var(--primario);
+    padding: .3em .5em;
+}
+
+.tarea_eliminar {
+        color:white;
+    max-width: max-content;
+    border-radius: 3px;
+    padding: .3em .5em;
+    margin: 0 auto;
+    background-color: var(--primario);
+    text-align: center;
+}
